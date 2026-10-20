@@ -11,8 +11,7 @@ export async function getNutritions() {
     const response = await fetch(url);
 
     if (!response.ok) {
-        throw new Error("Failed to load nutritions data");
-    }
+    fetch("../data/nutritions.json")    }
 
     const data = await response.json();
     nutritionCache = data;
