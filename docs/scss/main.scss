@@ -29,7 +29,9 @@ $secondaryColorDark: color.scale($secondaryColor, $lightness: -15%);
 @import "./layouts/sidebarPageLayout";
 @import "./components/sidebarMenuList";
 @import "./layouts/pageTableContentsLayout";
-
+@import "./components/imageModal";
+@import "./components/map";
+@import "./components/overviewText";
 // Mobile (<768px) → Sidebar = slide menu (hidden → open)
 // Tablet (≤1023px) → зөвхөн хэмжээ багасгана
 // Desktop (≥769px) → Sidebar = байнга харагдана (static)
@@ -59,13 +61,7 @@ $secondaryColorDark: color.scale($secondaryColor, $lightness: -15%);
     }
 }
 
-/* =========================
-   TABLET (<=1024px)
-========================= */
 @media screen and (max-width: 1023px) {
-    // .app-main-content {
-    //   padding: 2rem 2rem 2.5rem; /* Desktop-оос арай бага padding */
-    // }
 
     .app-title {
         line-height: 1.1;
@@ -135,9 +131,8 @@ $secondaryColorDark: color.scale($secondaryColor, $lightness: -15%);
     // }
 
     .app-title {
-        font-size: 2rem;
+        font-size: 1.65rem;
         line-height: 1.15;
-        letter-spacing: -0.03em;
     }
 
     .app-subtitle {
@@ -160,7 +155,7 @@ $secondaryColorDark: color.scale($secondaryColor, $lightness: -15%);
     // }
 
     .app-title {
-        font-size: 1.75rem;
+        font-size: 1.45rem;
     }
 
     .app-subtitle {
